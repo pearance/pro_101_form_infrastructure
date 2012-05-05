@@ -22,7 +22,7 @@ function pro_101_form_infrastructure_node_info() {
     'webform' => array(
       'name' => t('Webform'),
       'base' => 'node_content',
-      'description' => t('Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'),
+      'description' => t('Create a <em>webform</em> to create a form for prospects to fill in and submit.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

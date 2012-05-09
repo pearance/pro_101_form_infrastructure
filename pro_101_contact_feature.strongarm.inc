@@ -77,6 +77,15 @@ function pro_101_contact_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'in_field_labels_forms';
+  $strongarm->value = 'user-register-form
+user-login
+webform-client-form-15';
+  $export['in_field_labels_forms'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'locationmap_block_mapheight';
   $strongarm->value = 300;
   $export['locationmap_block_mapheight'] = $strongarm;

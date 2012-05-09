@@ -49,7 +49,7 @@ function pro_101_contact_feature_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -83,14 +83,14 @@ function pro_101_contact_feature_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-webform-field_office_address'
-  $fields['node-webform-field_office_address'] = array(
+  // Exported field: 'node-webform-field_map_address'
+  $fields['node-webform-field_map_address'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_office_address',
+      'field_name' => 'field_map_address',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -115,14 +115,14 @@ function pro_101_contact_feature_field_default_fields() {
       'bundle' => 'webform',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Enter address to be mapped in a single line (Ex. 123 Main Street, Suite 123, City, State 12345).',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
           'module' => 'simple_gmap',
           'settings' => array(
             'iframe_height' => '300',
-            'iframe_width' => '700',
+            'iframe_width' => '400',
             'include_link' => 1,
             'include_map' => 1,
             'include_text' => 0,
@@ -131,12 +131,12 @@ function pro_101_contact_feature_field_default_fields() {
             'zoom_level' => '16',
           ),
           'type' => 'simple_gmap',
-          'weight' => '0',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_office_address',
-      'label' => 'Office Address',
+      'field_name' => 'field_map_address',
+      'label' => 'Map Address',
       'required' => 1,
       'settings' => array(
         'text_processing' => '0',
@@ -151,7 +151,7 @@ function pro_101_contact_feature_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '4',
+        'weight' => '2',
       ),
     ),
   );
@@ -159,7 +159,8 @@ function pro_101_contact_feature_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Office Address');
+  t('Enter address to be mapped in a single line (Ex. 123 Main Street, Suite 123, City, State 12345).');
+  t('Map Address');
 
   return $fields;
 }

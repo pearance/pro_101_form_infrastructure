@@ -21,20 +21,18 @@ function pro_101_contact_feature_ds_layout_settings_info() {
     'hide_empty_regions' => 0,
     'hide_sidebars' => 0,
     'regions' => array(
-      'header' => array(
-        0 => 'field_office_address',
-      ),
       'left' => array(
         0 => 'webform',
       ),
       'right' => array(
         0 => 'body',
+        1 => 'field_map_address',
       ),
     ),
     'fields' => array(
-      'field_office_address' => 'header',
       'webform' => 'left',
       'body' => 'right',
+      'field_map_address' => 'right',
     ),
     'classes' => array(),
   );

@@ -37,6 +37,15 @@ function pro_101_contact_feature_user_default_permissions() {
     'module' => 'webform',
   );
 
+  // Exported permission: administer contactinfo.
+  $permissions['administer contactinfo'] = array(
+    'name' => 'administer contactinfo',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'contactinfo',
+  );
+
   // Exported permission: create webform content.
   $permissions['create webform content'] = array(
     'name' => 'create webform content',

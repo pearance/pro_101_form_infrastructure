@@ -201,6 +201,7 @@ function pro_101_contact_feature_field_default_fields() {
           'weight' => '1',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_title_graphic',
       'label' => 'Office Image',
@@ -220,10 +221,14 @@ function pro_101_contact_feature_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'feed' => 'feed',
+            'http' => 'http',
+            'https' => 'https',
             'private' => 'private',
             'public' => 'public',
           ),
           'allowed_types' => array(
+            0 => 0,
             'audio' => 0,
             'default' => 0,
             'image' => 'image',
@@ -233,6 +238,7 @@ function pro_101_contact_feature_field_default_fields() {
             'library' => 0,
             'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_internet' => 'media_internet',
+            'remote_file' => 'remote_file',
             'upload' => 'upload',
           ),
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',

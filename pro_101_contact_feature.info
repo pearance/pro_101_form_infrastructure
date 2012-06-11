@@ -7,7 +7,6 @@ version = 7.x-1.0
 project = pro_101_contact_feature
 dependencies[] = contactinfo
 dependencies[] = features
-dependencies[] = in_field_labels
 dependencies[] = media
 dependencies[] = phone
 dependencies[] = simple_gmap

@@ -1,5 +1,5 @@
 name = Pro 101 Contact Feature
-description = Facility to provide contact form, geo location, and other contact information.
+description = Contact form, geo location, & contact info.
 core = 7.x
 package = Pro 101 Features (G)
 php = 5.2.4

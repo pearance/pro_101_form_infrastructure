@@ -64,7 +64,7 @@ function pro_101_contact_feature_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Body',
+      'label' => 'Form Message',
       'required' => 0,
       'settings' => array(
         'display_summary' => 0,
@@ -75,6 +75,10 @@ function pro_101_contact_feature_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '10',
           'summary_rows' => 5,
         ),
@@ -139,7 +143,7 @@ function pro_101_contact_feature_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_map_address',
       'label' => 'Map Address',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
@@ -207,7 +211,7 @@ function pro_101_contact_feature_field_default_fields() {
       'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_title_graphic',
-      'label' => 'Office Image',
+      'label' => 'Form Image',
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
@@ -232,15 +236,16 @@ function pro_101_contact_feature_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
             0 => 0,
             'audio' => 0,
             'default' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 0,
             'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 0,
             'media_internet' => 'media_internet',
             'remote_file' => 'remote_file',
             'upload' => 'upload',
@@ -256,10 +261,10 @@ function pro_101_contact_feature_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Enter address to be mapped in a single line (Ex. 123 Main Street, Suite 123, City, State 12345).');
+  t('Form Image');
+  t('Form Message');
   t('Map Address');
-  t('Office Image');
 
   return $fields;
 }

@@ -63,6 +63,12 @@ function pro_101_contact_feature_strongarm() {
         'redirect' => array(
           'weight' => '4',
         ),
+        'metatags' => array(
+          'weight' => '10',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'webform' => array(

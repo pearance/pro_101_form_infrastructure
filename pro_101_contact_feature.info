@@ -66,3 +66,4 @@ features[variable][] = webform_node_types
 features[variable][] = webform_search_index
 features[variable][] = webform_submission_access_control
 features[variable][] = webform_use_cookies
+features[variable][] = xmlsitemap_settings_node_webform

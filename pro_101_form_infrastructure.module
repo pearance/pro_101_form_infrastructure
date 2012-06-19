@@ -4,4 +4,4 @@
  * Code for the Pro 101 Contact Feature feature.
  */
 
-include_once 'pro_101_contact_feature.features.inc';
+include_once 'pro_101_form_infrastructure.features.inc';

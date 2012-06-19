@@ -13,16 +13,18 @@ function pro_101_contact_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_webform';
-  $strongarm->value = 'edit-xmlsitemap';
-  $export['additional_settings__active_tab_webform'] = $strongarm;
+  $strongarm->name = 'contentanalysis_type_webform_enable';
+  $strongarm->value = 1;
+  $export['contentanalysis_type_webform_enable'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_webform';
-  $strongarm->value = 1;
-  $export['auto_menutitle_webform'] = $strongarm;
+  $strongarm->name = 'contentanalysis_webform';
+  $strongarm->value = array(
+    0 => 'enable',
+  );
+  $export['contentanalysis_webform'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -100,6 +102,20 @@ webform-client-form-15';
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_label_webform';
+  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
+  $export['maxlength_js_label_webform'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_webform';
+  $strongarm->value = '';
+  $export['maxlength_js_webform'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_webform';
   $strongarm->value = array(
     0 => 'menu-auxiliary',
@@ -143,6 +159,27 @@ webform-client-form-15';
   $strongarm->name = 'pathauto_node_webform_pattern';
   $strongarm->value = '[node:title]';
   $export['pathauto_node_webform_pattern'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_webform';
+  $strongarm->value = '0';
+  $export['rh_node_action_webform'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_webform';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_webform'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_webform';
+  $strongarm->value = '';
+  $export['rh_node_redirect_webform'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

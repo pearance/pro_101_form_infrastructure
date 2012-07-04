@@ -73,7 +73,7 @@ function pro_101_form_infrastructure_strongarm() {
       'display' => array(
         'webform' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '3',
             'visible' => TRUE,
           ),
         ),

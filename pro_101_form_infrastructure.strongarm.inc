@@ -13,6 +13,35 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'compact_forms_descriptions';
+  $strongarm->value = 1;
+  $export['compact_forms_descriptions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'compact_forms_field_size';
+  $strongarm->value = '';
+  $export['compact_forms_field_size'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'compact_forms_ids';
+  $strongarm->value = 'user-login-form
+webform-client-form-1';
+  $export['compact_forms_ids'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'compact_forms_stars';
+  $strongarm->value = '0';
+  $export['compact_forms_stars'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'contentanalysis_type_webform_enable';
   $strongarm->value = 1;
   $export['contentanalysis_type_webform_enable'] = $strongarm;

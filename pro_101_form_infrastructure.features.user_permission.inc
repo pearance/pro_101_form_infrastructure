@@ -37,6 +37,15 @@ function pro_101_form_infrastructure_user_default_permissions() {
     'module' => 'webform',
   );
 
+  // Exported permission: administer Compact Forms.
+  $permissions['administer Compact Forms'] = array(
+    'name' => 'administer Compact Forms',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'compact_forms',
+  );
+
   // Exported permission: create webform content.
   $permissions['create webform content'] = array(
     'name' => 'create webform content',

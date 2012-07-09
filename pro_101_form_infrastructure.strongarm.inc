@@ -130,8 +130,7 @@ webform-client-form-1';
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_webform';
   $strongarm->value = array(
-    0 => 'menu-auxiliary',
-    1 => 'main-menu',
+    0 => 'main-menu',
   );
   $export['menu_options_webform'] = $strongarm;
 

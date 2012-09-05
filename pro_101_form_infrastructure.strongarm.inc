@@ -224,14 +224,14 @@ webform-client-form-1';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'webform_default_from_address';
-  $strongarm->value = 'noreply@legalpro101c.platdev.info';
+  $strongarm->value = '';
   $export['webform_default_from_address'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'webform_default_from_name';
-  $strongarm->value = 'legalpro101c.platdev.info';
+  $strongarm->value = '';
   $export['webform_default_from_name'] = $strongarm;
 
   $strongarm = new stdClass();

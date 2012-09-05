@@ -14,7 +14,10 @@ function pro_101_form_infrastructure_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'webform',
   );
@@ -86,7 +89,10 @@ function pro_101_form_infrastructure_user_default_permissions() {
   $permissions['delete own webform submissions'] = array(
     'name' => 'delete own webform submissions',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'webform',
   );
@@ -95,7 +101,10 @@ function pro_101_form_infrastructure_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'webform',
   );

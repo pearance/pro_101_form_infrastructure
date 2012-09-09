@@ -48,6 +48,7 @@ features[variable][] = menu_parent_webform
 features[variable][] = node_options_webform
 features[variable][] = node_preview_webform
 features[variable][] = node_submitted_webform
+features[variable][] = nodeformscols_field_placements_webform_default
 features[variable][] = pathauto_node_webform_pattern
 features[variable][] = rh_node_action_webform
 features[variable][] = rh_node_redirect_response_webform

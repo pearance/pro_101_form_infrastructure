@@ -117,6 +117,62 @@ webform-client-form-1';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_firstlast_webform';
+  $strongarm->value = 0;
+  $export['flippy_firstlast_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_first_label_webform';
+  $strongarm->value = 'First';
+  $export['flippy_first_label_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_head_webform';
+  $strongarm->value = 0;
+  $export['flippy_head_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_label_type_webform';
+  $strongarm->value = '0';
+  $export['flippy_label_type_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_last_label_webform';
+  $strongarm->value = 'Last';
+  $export['flippy_last_label_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_next_label_webform';
+  $strongarm->value = 'Next';
+  $export['flippy_next_label_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_prev_label_webform';
+  $strongarm->value = 'Previous';
+  $export['flippy_prev_label_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'flippy_webform';
+  $strongarm->value = 0;
+  $export['flippy_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'maxlength_js_label_webform';
   $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
   $export['maxlength_js_label_webform'] = $strongarm;
@@ -143,6 +199,34 @@ webform-client-form-1';
   $strongarm->name = 'menu_parent_webform';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_comment_link_webform';
+  $strongarm->value = '0';
+  $export['nodeblock_comment_link_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_node_link_webform';
+  $strongarm->value = '0';
+  $export['nodeblock_node_link_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_view_mode_webform';
+  $strongarm->value = 'full';
+  $export['nodeblock_view_mode_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nodeblock_webform';
+  $strongarm->value = '0';
+  $export['nodeblock_webform'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -199,6 +283,7 @@ webform-client-form-1';
   $strongarm->name = 'node_options_webform';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_webform'] = $strongarm;
 
@@ -206,7 +291,7 @@ webform-client-form-1';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_webform';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_webform'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -350,6 +435,13 @@ webform-client-form-1';
   $strongarm->name = 'webform_use_cookies';
   $strongarm->value = 1;
   $export['webform_use_cookies'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_webform';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_webform'] = $strongarm;
 
   return $export;
 }

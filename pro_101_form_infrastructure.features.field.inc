@@ -186,7 +186,7 @@ function pro_101_form_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_title_graphic',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'fid' => array(
@@ -260,14 +260,13 @@ function pro_101_form_infrastructure_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
+            0 => 0,
             'audio' => 0,
             'default' => 0,
-            0 => 0,
             'image' => 'image',
             'video' => 0,
           ),
           'browser_plugins' => array(
-            'library' => 0,
             'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_default--media_browser_my_files' => 0,
             'media_internet' => 'media_internet',

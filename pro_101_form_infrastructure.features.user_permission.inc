@@ -101,10 +101,7 @@ function pro_101_form_infrastructure_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
     ),
     'module' => 'webform',
   );
@@ -113,7 +110,10 @@ function pro_101_form_infrastructure_user_default_permissions() {
   $permissions['edit any webform content'] = array(
     'name' => 'edit any webform content',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'node',
   );

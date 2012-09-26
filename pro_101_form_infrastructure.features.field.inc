@@ -57,7 +57,10 @@ function pro_101_form_infrastructure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
@@ -65,6 +68,8 @@ function pro_101_form_infrastructure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -142,6 +147,8 @@ function pro_101_form_infrastructure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'simple_gmap',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'iframe_height' => '300',
             'iframe_width' => '400',
             'include_link' => 1,
@@ -225,6 +232,8 @@ function pro_101_form_infrastructure_field_default_fields() {
           'label' => 'above',
           'module' => 'image',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'image_link' => '',
             'image_style' => 'medium',
           ),
@@ -261,8 +270,8 @@ function pro_101_form_infrastructure_field_default_fields() {
           ),
           'allowed_types' => array(
             'audio' => 0,
-            0 => 0,
             'default' => 0,
+            0 => 0,
             'image' => 'image',
             'video' => 0,
           ),

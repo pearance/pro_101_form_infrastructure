@@ -29,7 +29,8 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_ids';
   $strongarm->value = 'user-login-form
-webform-client-form-1';
+webform-client-form-1
+jasm-feedburner-mail-subscribe-form';
   $export['compact_forms_ids'] = $strongarm;
 
   $strongarm = new stdClass();

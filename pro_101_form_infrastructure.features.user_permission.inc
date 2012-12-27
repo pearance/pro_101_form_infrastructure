@@ -134,5 +134,68 @@ function pro_101_form_infrastructure_user_default_permissions() {
     'module' => 'webform',
   );
 
+  // Exported permission: enter webform revision log entry.
+  $permissions['enter webform revision log entry'] = array(
+    'name' => 'enter webform revision log entry',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override webform authored by option.
+  $permissions['override webform authored by option'] = array(
+    'name' => 'override webform authored by option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override webform authored on option.
+  $permissions['override webform authored on option'] = array(
+    'name' => 'override webform authored on option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override webform promote to front page option.
+  $permissions['override webform promote to front page option'] = array(
+    'name' => 'override webform promote to front page option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override webform published option.
+  $permissions['override webform published option'] = array(
+    'name' => 'override webform published option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override webform revision option.
+  $permissions['override webform revision option'] = array(
+    'name' => 'override webform revision option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override webform sticky option.
+  $permissions['override webform sticky option'] = array(
+    'name' => 'override webform sticky option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
   return $permissions;
 }

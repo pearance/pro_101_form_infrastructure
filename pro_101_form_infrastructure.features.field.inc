@@ -57,10 +57,14 @@ function pro_101_form_infrastructure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-          ),
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
           'type' => 'text_default',
           'weight' => '0',
         ),
@@ -110,6 +114,9 @@ function pro_101_form_infrastructure_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_map_address',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -133,7 +140,11 @@ function pro_101_form_infrastructure_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'webform',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => '35 Journal Square, Suite 426, Jersey City, NJ 07306',
+        ),
+      ),
       'deleted' => '0',
       'description' => 'Enter address to be mapped in a single line (Ex. 123 Main Street, Suite 123, City, State 12345).',
       'display' => array(
@@ -147,8 +158,24 @@ function pro_101_form_infrastructure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'simple_gmap',
           'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
+            'iframe_height' => '300',
+            'iframe_width' => '400',
+            'include_link' => 1,
+            'include_map' => 1,
+            'include_text' => 0,
+            'information_bubble' => 0,
+            'langcode' => 'en',
+            'link_text' => 'View larger map',
+            'map_type' => 'm',
+            'zoom_level' => '16',
+          ),
+          'type' => 'simple_gmap',
+          'weight' => '0',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'simple_gmap',
+          'settings' => array(
             'iframe_height' => '300',
             'iframe_width' => '400',
             'include_link' => 1,
@@ -213,7 +240,7 @@ function pro_101_form_infrastructure_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => 0,
+        'default_image' => '48',
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -234,8 +261,16 @@ function pro_101_form_infrastructure_field_default_fields() {
           'label' => 'above',
           'module' => 'image',
           'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
+            'image_link' => '',
+            'image_style' => 'medium',
+          ),
+          'type' => 'image',
+          'weight' => '2',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
             'image_link' => '',
             'image_style' => 'medium',
           ),

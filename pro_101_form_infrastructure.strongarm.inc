@@ -126,6 +126,9 @@ jasm-feedburner-mail-subscribe-form';
       'colorbox' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -148,6 +151,10 @@ jasm-feedburner-mail-subscribe-form';
       'display' => array(
         'webform' => array(
           'default' => array(
+            'weight' => '3',
+            'visible' => TRUE,
+          ),
+          'full' => array(
             'weight' => '3',
             'visible' => TRUE,
           ),

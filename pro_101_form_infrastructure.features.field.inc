@@ -240,7 +240,7 @@ function pro_101_form_infrastructure_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '48',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',

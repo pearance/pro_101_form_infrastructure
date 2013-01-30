@@ -45,6 +45,7 @@ function pro_101_form_infrastructure_user_default_permissions() {
     'name' => 'administer Compact Forms',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'compact_forms',
   );

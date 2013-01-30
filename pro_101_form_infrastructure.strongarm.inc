@@ -21,7 +21,7 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_field_size';
-  $strongarm->value = '';
+  $strongarm->value = '30';
   $export['compact_forms_field_size'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -30,6 +30,7 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm->name = 'compact_forms_ids';
   $strongarm->value = 'user-login-form
 webform-client-form-1
+webform-client-form-32
 jasm-feedburner-mail-subscribe-form';
   $export['compact_forms_ids'] = $strongarm;
 
@@ -44,7 +45,7 @@ jasm-feedburner-mail-subscribe-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'contentanalysis_type_webform_enable';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['contentanalysis_type_webform_enable'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -88,7 +89,7 @@ jasm-feedburner-mail-subscribe-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'diff_view_mode_preview_node_webform';
-  $strongarm->value = 'diff_complete';
+  $strongarm->value = '';
   $export['diff_view_mode_preview_node_webform'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -151,7 +152,7 @@ jasm-feedburner-mail-subscribe-form';
       'display' => array(
         'webform' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '2',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -238,9 +239,7 @@ jasm-feedburner-mail-subscribe-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_webform';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_webform'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -300,26 +299,19 @@ jasm-feedburner-mail-subscribe-form';
       'region' => 'right',
       'weight' => '0',
       'has_required' => FALSE,
-      'title' => 'Save',
+      'title' => 'Publish',
       'hidden' => 0,
     ),
     'body' => array(
       'region' => 'main',
-      'weight' => '1',
+      'weight' => '2',
       'has_required' => FALSE,
       'title' => 'Form Message',
       'hidden' => 0,
     ),
-    'field_map_address' => array(
-      'region' => 'main',
-      'weight' => '4',
-      'has_required' => FALSE,
-      'title' => 'Map Address',
-      'hidden' => 0,
-    ),
     'field_title_graphic' => array(
       'region' => 'main',
-      'weight' => '2',
+      'weight' => '1',
       'has_required' => FALSE,
       'title' => 'Form Image',
       'hidden' => 0,

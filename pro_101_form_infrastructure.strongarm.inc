@@ -28,10 +28,13 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_ids';
-  $strongarm->value = 'user-login-form
+  $strongarm->value = 'user-login
+user-pass
+user-register-form
 webform-client-form-1
 webform-client-form-32
-jasm-feedburner-mail-subscribe-form';
+jasm-feedburner-mail-subscribe-form
+testimonial-node-form';
   $export['compact_forms_ids'] = $strongarm;
 
   $strongarm = new stdClass();

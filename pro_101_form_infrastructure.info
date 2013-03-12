@@ -41,6 +41,7 @@ features[user_permission][] = override webform published option
 features[user_permission][] = override webform revision option
 features[user_permission][] = override webform sticky option
 features[variable][] = compact_forms_descriptions
+features[variable][] = compact_forms_excluded_fields
 features[variable][] = compact_forms_field_size
 features[variable][] = compact_forms_ids
 features[variable][] = compact_forms_stars

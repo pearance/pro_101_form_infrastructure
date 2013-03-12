@@ -20,6 +20,13 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'compact_forms_excluded_fields';
+  $strongarm->value = '';
+  $export['compact_forms_excluded_fields'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_field_size';
   $strongarm->value = '30';
   $export['compact_forms_field_size'] = $strongarm;

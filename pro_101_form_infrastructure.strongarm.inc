@@ -38,8 +38,7 @@ function pro_101_form_infrastructure_strongarm() {
   $strongarm->value = 'user-login
 user-pass
 user-register-form
-webform-client-form-1
-webform-client-form-32
+webform-client-form-3
 jasm-feedburner-mail-subscribe-form
 testimonial-node-form';
   $export['compact_forms_ids'] = $strongarm;
